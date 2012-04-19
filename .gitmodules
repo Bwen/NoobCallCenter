@@ -1,0 +1,6 @@
+[submodule "node_modules/NoobHTTP"]
+	path = node_modules/NoobHTTP
+	url = git@github.com:Bwen/NoobHTTP.git
+[submodule "node_modules/NoobConfig"]
+	path = node_modules/NoobConfig
+	url = git@github.com:Bwen/NoobConfig.git
