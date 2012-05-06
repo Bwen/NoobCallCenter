@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Gather action="{settings.url.twiML}account_number" method="POST" finishOnKey="#">
+        <Say voice="woman" language="fr">
+            S'il vous plaît entrer votre numéro de compte suivi par le signe dièse.
+        </Say>
+    </Gather>
+    <Redirect method="POST">{settings.url.twiML}choose_purpose</Redirect>
+</Response>

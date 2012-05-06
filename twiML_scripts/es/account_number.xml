@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Gather action="{settings.url.twiML}account_number" method="POST" finishOnKey="#">
+        <Say voice="woman" language="es">
+            Por favor, introduzca su número de cuenta seguido por el signo de libra.
+        </Say>
+    </Gather>
+    <Redirect method="POST">{settings.url.twiML}choose_purpose</Redirect>
+</Response>

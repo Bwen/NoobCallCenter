@@ -111,6 +111,9 @@ ConfigFile.prototype.addLineToSection = function (name, line) {
       else if (value.match(/^null$/i)) {
           value = null;
       }
+      else {
+          value = value.toString();
+      }
 
       currentArray[ index ] = value;
     }

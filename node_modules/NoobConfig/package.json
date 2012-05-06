@@ -3,7 +3,7 @@
   , "name": "NoobConfig"
   , "description": "Parser for .ini for nodejs"
   , "keywords": ["parser", "ini", "nodejs"]
-  , "version": "0.2.0"
+  , "version": "0.2.1"
   , "homepage": "https://github.com/Bwen/NoobConfig"
   , "repository":{
         "type": "git"

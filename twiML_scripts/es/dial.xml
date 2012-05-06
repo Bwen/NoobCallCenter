@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Dial action="{settings.url.twiML}call_end" method="POST" record="true">
+        <Client>{agent}</Client>
+    </Dial>
+    <Say voice="woman" language="es">Gracias por llamar.</Say>
+</Response>

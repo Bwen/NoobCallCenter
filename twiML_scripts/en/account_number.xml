@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Gather action="{settings.url.twiML}account_number" method="POST" finishOnKey="#">
+        <Say voice="woman" language="en-gb">
+            Please enter your account number followed by the pound sign.
+        </Say>
+    </Gather>
+    <Redirect method="POST">{settings.url.twiML}choose_purpose</Redirect>
+</Response>

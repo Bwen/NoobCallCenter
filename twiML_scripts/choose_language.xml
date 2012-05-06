@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Gather action="{settings.url.twiML}choose_language" method="POST" numDigits="1">
+        <Say voice="woman" language="en-gb">Welcome to NoobDesk.</Say>
+        <Say voice="woman" language="fr">Appuyez sur 1 pour le français.</Say>
+        <Say voice="woman" language="en-gb">Press 2 for english.</Say>
+        <Say voice="woman" language="es">Presione 3 para español.</Say>
+    </Gather>
+    <Say voice="woman" language="en-gb">We didnt get your language choice!</Say>
+    <Redirect method="POST">{settings.url.twiML}choose_language</Redirect>
+</Response>

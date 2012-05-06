@@ -1,0 +1,31 @@
+<section id="phone">
+    <header data-i18n="noobphone:phone.title">&nbsp;</header>
+    <input type="button" data-i18n="noobphone:phone.avaialble" value="" />
+    <section id="incommingCalls" />
+</section>
+<script type="text/javascript">
+    $('#noobphone #phone [type="button"]').click(function (event) {
+        event.stopPropagation();
+
+        $(this).val(noobI18n.get('noobphone', 'phone.unavailable'));
+        socketio.root.emit('available', true);
+        return false;
+    });
+
+    socketio.root.on('ringing', function socketio_ringing(call) {
+        play_sound(noobLoaderPrefix + '/sound/ringing.wav', true);
+        //stop_sound(settings.NoobDesk.url+'phone/static/sound/ringing.wav');
+        console.log('--- Ringing: ', call);
+
+        if ($('#noobphone #phone #incommingCalls #' + call.data.CallSid).length == 0){
+            noobTemplates.get('/templates/call.html', call, function fetchCallHtml(err, html) {
+                $('#noobphone #phone #incommingCalls').append(html);
+                $('#noobphone #phone #incommingCalls #' + call.data.CallSid + ' .answer').click(function (event) {
+                    socketio.root.emit('answer', call);
+                });
+            });
+        } else {
+        }
+    });
+
+</script>

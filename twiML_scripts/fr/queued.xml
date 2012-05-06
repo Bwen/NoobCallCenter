@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say voice="woman" language="fr">Merci de votre appel, un représentant sera avec vous sous peu.</Say>
+    <Play loop="100">http://newbiverse.com/mp3/crookedspoon.mp3</Play>
+</Response>

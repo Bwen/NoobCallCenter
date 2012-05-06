@@ -1,0 +1,35 @@
+{
+    "login": {
+        "title": "NoobPhone Login",
+        "nickname": "Nickname",
+        "login": "Login",
+        "password": "Password",
+        "submit": "Submit"
+    },
+    "phone": {
+        "title": "Softphone",
+        "avaialble": "Available",
+        "unavailable": "Unavailable",
+        "answer": "Answer",
+        "account": {
+            "status": "Account status",
+            "language": "Call language"
+        }
+    },
+    "lang": {
+        "fr": "French",
+        "es": "Spanish",
+        "en": "English"
+    },
+    "isgi": {
+        "status": {
+            "300": "Active",
+            "310": "Collection",
+            "314": "Collection",
+            "500": "Suspended",
+            "600": "To Recover",
+            "602": "Sent to collection agency",
+            "700": "Closed"
+        }
+    }
+}

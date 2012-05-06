@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Gather action="{settings.url.twiML}choose_purpose" method="POST" numDigits="1">
+        <Say voice="woman" language="es">
+            ¿Cuál es el propósito de su llamada.
+             Presione 1 para ventas.
+             Presione 2 para la facturación.
+             Presione 3 para la asistencia técnica.
+             Presione 0 para la recepcionista.
+        </Say>
+    </Gather>
+    <Redirect method="POST">{settings.url.twiML}choose_purpose</Redirect>
+</Response>
